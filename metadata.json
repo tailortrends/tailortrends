@@ -1,0 +1,6 @@
+{
+  "name": "Tailor Trends",
+  "description": "Follow the trend. Understand the technology. See how it changes the real world. A modern editorial platform covering AI and emerging technology across real-world industries.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

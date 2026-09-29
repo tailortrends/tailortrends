@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Newsreader', Georgia, serif;
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-display: 'Instrument Serif', Georgia, serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+}
+
+.font-serif {
+  font-family: 'Newsreader', Georgia, serif;
+}
+
+.font-display {
+  font-family: 'Instrument Serif', Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom editorial scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d6d3d1;
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #44403c;
+}
+
+/* Subtle print/editorial border effect */
+.editorial-border-b {
+  border-bottom: 1px solid currentColor;
+  opacity: 0.15;
+}
+
+.editorial-drop-cap::first-letter {
+  float: left;
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: 4.25rem;
+  line-height: 0.8;
+  padding-right: 0.75rem;
+  padding-top: 0.25rem;
+  font-weight: 400;
+}
+
+/* Editorial spring easing for dialogs */
+.editorial-modal-transition {
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
